@@ -1,0 +1,2 @@
+export const INCREMENTS = 'INCREMENTS'
+export const CHANGETITLES = 'CHANGETITLES'
