@@ -4,7 +4,7 @@
 > 
 > show it online： [vue-dynatic-icon](http://www.vituyun.com/css/vue-dynatic-icon "vue-dynatic-icon")
 
-![](https://user-gold-cdn.xitu.io/2018/1/18/1610869f2cae4f2f?w=1029&h=775&f=gif&s=359562)
+![](./static/img/vue-dynatic-icon.gif)
 
 ## Build Setup
 
