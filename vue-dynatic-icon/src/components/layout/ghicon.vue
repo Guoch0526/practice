@@ -1,14 +1,18 @@
 <template>
-  <a href="https://github.com/fingerpan/Acticon" class="github">
-    <span class="github_icon"></span>
+  <a href="https://github.com/Guoch0526/practice/tree/master/vue-dynatic-icon" class="github">
+    <img :src="githubImg" alt="github" class="github_icon">
     <span class="star">star</span>
   </a>
 </template>
 
 <script>
+  import githubImg from '../../../static/img/timg.png'
+
   export default{
     data() {
-      return {}
+      return {
+        githubImg
+      }
     },
   }
 </script>
@@ -33,7 +37,7 @@
         display: inline-block;
         width: 14px;
         height: 14px;
-        background-image: url(../../../static/img/timg.png);
+        // background-image: url(../../../static/img/timg.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
       }

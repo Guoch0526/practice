@@ -4,6 +4,8 @@
   "description": "one dynatic icon by vue",
   "main": "index.js",
   "scripts": {
+    "dev": "node build/dev-server.js",
+    "build": "node build/build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -1,6 +1,6 @@
 <template>
   <div class="header">
-    <header class="head logo"><h1>Acticon</h1></header>
+    <header class="head logo"><h1>vue-dynatic-icon</h1></header>
     <div class="acticon_top">
       <h2 class="actico__desc">the vue.js dynamic icon with MIT license</h2>
       <h1 class="acticon__title">Action icon structure with pure CSS and HTML</h1>
@@ -29,7 +29,7 @@
   }
   .head {
     width: 100%;
-    height: 130px;
+    height: 150px;
     border-bottom: 1px solid #CCCCCC;
     box-sizing: border-box;
     padding-top: 30px;
@@ -95,10 +95,10 @@
       margin: 0 10px;
     }
     .head {
-      height: 100px;
+      height: 110px;
       padding-top: 50px;
       > h1 {
-        font-size: 50px;
+        font-size: 40px;
         color: #2bb48a;
         font-weight: 400;
         margin: 0;
