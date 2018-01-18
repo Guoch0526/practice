@@ -7,7 +7,7 @@
       <h2 class="acticon__anthor">From <a href="http://vituyun.com" class="guoch">Guoch</a>
         <ghicon></ghicon>
       </h2>
-      <a class="contribute" href="http://vituyun.com">contact me</a>
+      <a class="contribute" href="http://www.vituyun.com">contact me</a>
     </div>
   </div>
 </template>
