@@ -1,5 +1,5 @@
 @import "var";
-//   base minxins  ---------------------------------------------
+// base minxins
 .setWH(@w,@h:@w){
   width: @w;
   height: @h;
@@ -25,7 +25,7 @@
   align-items: center;
 }
 
-//  center
+// center
 .setcenter(@top:50%,@left:50%){
   position: absolute;
   top: 50%;
@@ -33,11 +33,49 @@
   .transform(translate(-50%, -50%));
 }
 
-//   icon base color
+// icon base color
 @iconColor : @grey-dark;
 
 .iconbg{
   background-color:@iconColor;
+}
+
+.rotate-animate (@animate1, @animate2, @animate3) {
+  animation: @animate1 0.75s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s forwards,
+             @animate2 6.25s cubic-bezier(0.215, 0.61, 0.355, 1) 2.25s infinite,
+             @animate3 18.75s cubic-bezier(0.215, 0.61, 0.355, 1) 0.5s infinite;
+}
+
+.color-keyframes (@color1, @color2, @color3, @colorKeyWorld) {
+  @keyframes @colorKeyWorld {
+    0% {
+      background-color: @color1;
+    }
+
+    29% {
+      background-color: @color1;
+    }
+
+    33% {
+      background-color: @color2;
+    }
+
+    63% {
+      background-color: @color2;
+    }
+
+    67% {
+      background-color: @color3;
+    }
+
+    96% {
+      background-color: @color3;
+    }
+
+    100% {
+      background-color: @color1;
+    }
+  }
 }
 
 

@@ -1,91 +1,83 @@
 <template>
-  <ul class="clearfix layout">
-    <!--misicline-->
-    <li>
-      <div id="music">
-        <musicline></musicline>
-      </div>
-      <h4>musicline</h4>
-    </li>
-    <!--loadline-->
-    <li>
-      <div id="loading">
-        <loadline></loadline>
-      </div>
-      <h4>Loading</h4>
-    </li>
-    <!--jumpline-->
-    <li>
-      <div id="jumpline">
-        <jumpline></jumpline>
-      </div>
-      <h4>jumpline</h4>
-    </li>
-    <!--setting-->
-    <li>
-      <div>
-        <setting></setting>
-        </b>
-      </div>
-      <h4>Setting</h4>
-    </li>
-    <!--wifi-->
-    <li>
-      <div>
-        <wifi></wifi>
-      </div>
-      <h4>Wifi</h4>
-    </li>
-    <!--shock-->
-    <li>
-      <div id="shock">
-        <shock></shock>
-      </div>
-      <h4>Shock</h4>
-    </li>
-    <!--photo-->
-    <li>
-      <div>
-        <photo></photo>
-      </div>
-      <h4>Photo</h4>
-    </li>
-    <!--delete-->
-    <li>
-      <div>
-        <dele></dele>
-      </div>
-      <h4>Delete</h4>
-    </li>
-    <!--ripples-->
-    <li>
-      <div>
-        <ripple></ripple>
-      </div>
-      <h4>Ripples</h4>
-    </li>
-    <!--refresh-->
-    <li>
-      <div>
-        <refresh></refresh>
-      </div>
-      <h4>Refresh</h4>
-    </li>
-    <!--weixin-->
-    <li>
-      <div id="time">
-       <weixin></weixin>
-      </div>
-      <h4>weixin</h4>
-    </li>
-    <!--help-->
-    <li>
-      <div>
-       <help></help>
-      </div>
-      <h4>Help</h4>
-    </li>
-  </ul>
+  <div>
+    <ul class="clearfix layout">
+      <li>
+        <div id="music">
+          <musicline></musicline>
+        </div>
+        <h4>musicline</h4>
+      </li>
+      <li>
+        <div id="loading">
+          <loadline></loadline>
+        </div>
+        <h4>Loading</h4>
+      </li>
+      <li>
+        <div id="jumpline">
+          <jumpline></jumpline>
+        </div>
+        <h4>jumpline</h4>
+      </li>
+      <li>
+        <div>
+          <setting></setting>
+        </div>
+        <h4>Setting</h4>
+      </li>
+      <li>
+        <div>
+          <wifi></wifi>
+        </div>
+        <h4>Wifi</h4>
+      </li>
+      <li>
+        <div id="shock">
+          <shock></shock>
+        </div>
+        <h4>Shock</h4>
+      </li>
+      <li>
+        <div>
+          <photo></photo>
+        </div>
+        <h4>Photo</h4>
+      </li>
+      <li>
+        <div>
+          <dele></dele>
+        </div>
+        <h4>Delete</h4>
+      </li>
+      <li>
+        <div>
+          <ripple></ripple>
+        </div>
+        <h4>Ripples</h4>
+      </li>
+      <li>
+        <div>
+          <refresh></refresh>
+        </div>
+        <h4>Refresh</h4>
+      </li>
+      <li>
+        <div id="time">
+        <weixin></weixin>
+        </div>
+        <h4>Wechat</h4>
+      </li>
+      <li>
+        <div>
+        <help></help>
+        </div>
+        <h4>Help</h4>
+      </li>
+    </ul>
+    <div class="flower">
+      <flower></flower>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -101,6 +93,7 @@
   import refresh from "acticon/refresh.vue"
   import jumpline from "acticon/jumpline.vue"
   import weixin from "acticon/weixin.vue"
+  import flower from "acticon/flower.vue"
 
   export default{
     components: {
@@ -115,7 +108,8 @@
       dele,
       refresh,
       jumpline,
-      weixin
+      weixin,
+      flower
     }
   }
 </script>
@@ -162,11 +156,21 @@
     }
   }
 
+  .flower {
+    width: 750px;
+    margin: 20px auto;
+    border: 1px solid #2bb48a;
+  }
+
   @media screen and (max-width: 740px) {
     .layout {
       width: 100%;
       margin: 0;
       padding: 0;
+    }
+
+    .flower {
+      width: 100%;
     }
 
     .layout > li {
